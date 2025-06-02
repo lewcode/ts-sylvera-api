@@ -4,9 +4,7 @@
 
 import { server } from "./server";
 
-// Main execution
-async function main(): Promise<void> {
-
+const App = () => {
 	try {
 		server();
 
@@ -25,10 +23,4 @@ async function main(): Promise<void> {
 	}
 }
 
-// Run the application
-if (require.main === module) {
-	main().catch((error) => {
-		console.error("Unhandled error:", error);
-		process.exit(1);
-	});
-}
+App()
