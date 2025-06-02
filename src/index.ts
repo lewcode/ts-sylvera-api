@@ -6,7 +6,6 @@ import { server } from "./server";
 
 // Main execution
 async function main(): Promise<void> {
-	// const app = new Application();
 
 	try {
 		server();

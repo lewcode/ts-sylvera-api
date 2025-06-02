@@ -14,7 +14,6 @@ export const server = () => {
 			const projects = await prisma.projects.findMany();
 			res.json(projects);
 		} catch (error) {
-			// Proper error handling and logging
 			console.error("Error fetching projects:", error);
 			res.status(500).json({ error: "Internal server error" });
 		}
