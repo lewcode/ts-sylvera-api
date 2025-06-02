@@ -68,10 +68,7 @@ npm start
 - `npm test` - Run tests
 - `npm run test:watch` - Run tests in watch mode
 - `npm run test:coverage` - Run tests with coverage report
-- `npm run lint` - Lint the code
-- `npm run lint:fix` - Lint and auto-fix issues
-- `npm run format` - Format code with Prettier
-- `npm run format:check` - Check code formatting
+- `npm run format` - Format code with Biome
 - `npm run clean` - Clean build directory
 
 ## Project Structure
@@ -79,18 +76,14 @@ npm start
 ```
 src/
 ├── index.ts           # Main application entry point
-└── utils/
-    ├── logger.ts      # Logging utility
 
 tests/                 # Test files
-├── logger.spec.ts
 └── server.spec.ts
 
 Configuration files:
 ├── tsconfig.json      # TypeScript configuration
 ├── jest.config.js     # Jest testing configuration
-├── .eslintrc.js       # ESLint configuration
-├── .prettierrc        # Prettier configuration
+├── biome.json        # Biome configuration
 └── package.json       # Project dependencies and scripts
 ```
 
@@ -99,8 +92,7 @@ Configuration files:
 This project uses several tools to maintain code quality:
 
 - **TypeScript**: Provides static type checking
-- **ESLint**: Enforces code style and catches potential issues
-- **Prettier**: Automatically formats code for consistency
+- **Biome**: Formatting
 - **Jest**: Ensures code works as expected through comprehensive testing
 
 ## Contributing
@@ -109,9 +101,8 @@ This project uses several tools to maintain code quality:
 2. Create a feature branch
 3. Make your changes
 4. Run tests: `npm test`
-5. Run linting: `npm run lint`
-6. Format code: `npm run format`
-7. Submit a pull request
+5. Format code: `npm run format`
+6. Submit a pull request
 
 ## License
 

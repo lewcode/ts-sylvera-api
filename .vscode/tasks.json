@@ -5,14 +5,9 @@
 			"label": "Build TypeScript",
 			"type": "shell",
 			"command": "npm",
-			"args": [
-				"run",
-				"build"
-			],
+			"args": ["run", "build"],
 			"group": "build",
-			"problemMatcher": [
-				"$tsc"
-			],
+			"problemMatcher": ["$tsc"],
 			"isBackground": false
 		}
 	]
